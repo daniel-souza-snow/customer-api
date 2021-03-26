@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "a3b689c9-ec3c-4623-8d94-3e4178cf16ba",
+		"name": "customer-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://customer-api-java.herokuapp.com/customers/75449360070",
+					"protocol": "https",
+					"host": [
+						"customer-api-java",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customers",
+						"75449360070"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": \"75449360070\",\n    \"name\": \"Mariana Teste\",\n    \"age\": 55,\n    \"address\": \"rua delete, 020\",\n    \"cellPhone\": \"1140284978\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://customer-api-java.herokuapp.com/customers",
+					"protocol": "https",
+					"host": [
+						"customer-api-java",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"rua Joana Update, 020\",\n    \"cellPhone\": \"1140284978\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://customer-api-java.herokuapp.com/customers/75449360070",
+					"protocol": "https",
+					"host": [
+						"customer-api-java",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customers",
+						"75449360070"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://customer-api-java.herokuapp.com/customers/75449360070",
+					"protocol": "https",
+					"host": [
+						"customer-api-java",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customers",
+						"75449360070"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://customer-api-java.herokuapp.com/customers",
+					"protocol": "https",
+					"host": [
+						"customer-api-java",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
